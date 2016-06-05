@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type = "text/javascript" src = "review_plan.js"></script>
+</head>
+<body>
+<div class = "completedForm">
+    <div>
+        <label for="type">1. TYPE:</label>
+        <span id = "type"></span>
+    </div>
+    <div>
+        <label for="ident">2. AIRCRAFT IDENTIFICATION:</label>
+        <span id = "ident"></span>
+    </div>
+    <div>
+        <label for="type">3. AIRCRAFT TYPE / SPECIAL EQUIPMENT:</label>
+        <span id = "special_equip"></span>
+    </div>
+    <div>
+        <label for="true_airspeed">4. TRUE AIRSPEED:</label>
+        <span id = "true_airspeed"></span>
+    </div>
+    <div>
+        <label for="departure">5. DEPARTURE POINT:</label>
+        <span id = "departure"></span>
+    </div>
+    <div>
+        <label for="departtime">6. DEPARTURE TIME:</label>
+        <div>
+            <label for="dept_time_proposed">PROPOSED (Z):</label>
+            <span id = "dept_time_proposed"></span>
+
+            <div><label for="dept_time_actual">ACTUAL (Z):</label>
+                <span id = "dept_time_actual"></span>
+                </div></div></div>
+    <div><label for="cruise_alt">7. CRUISING ALTITUDE:</label>
+        <span id = "cruise_alt"></span>
+        </div>
+    <div><label for="route">8. ROUTE OF FLIGHT:</label>
+        <span id = "route"></span>
+        </div>
+    <div><label for="dst">9. DESTINATION (Name of airport and city):</label>
+        <span id = "dst"></span>
+        </div>
+    <div><label for="ete">10. EST. TIME ENROUTE:</label>
+        <span id = "ete"></span>
+    </div>
+    <div><label for="remarks">11. REMARKS:</label>
+        <span id = "remarks"></span>
+        </div>
+    <div>
+        <label for="fuel">12. FUEL ON BOARD:</label>
+        <span id = "fuel"></span>
+    </div>
+    <div><label for="alt_airports">13. ALTERNATE AIRPORTS(S):</label>
+        <span id = "alt_airports"></span>
+    </div>
+    <div><label for="name">14. PILOT'S NAME, ADDRESS & TELEPHONE NUMBER & AIRCRAFT HOME BASE:</label>
+        <span id = "name"></span>
+    </div>
+    <div><label for="num_aboard">15. NUMBER ABOARD:</label>
+        <span id = "num_aboard"></span>
+        </div>
+    <div><label for="color">16. COLOR OF AIRCRAFT:</label>
+        <span id = "color"></span>
+        </div>
+    <div><label for="dst_contact">17. DESTINATION CONTACT/TELEPHONE (OPTIONAL):</label>
+        <span id = "dst_contact"></span>
+        </div>
+    <div class = "links">
+        <a href="#" id = "edit_plan" class = 'fakeButton'>Edit Plan</a>
+        <a href="#" id = "complete_plan" class = 'fakeButton' onclick = complete_plan()>Complete Plan</a>
+        <a href="#" id = "delete_plan" class = 'fakeButton' onclick = delete_plan()>Delete Plan</a>
+        <a href="#" id = 'profile' class = 'fakeButton'>View Profile</a>
+        <a href="map.html" class = 'fakeButton'>View Map</a>
+        <img id = 'gravitar' src="#"/>
+    </div>
+
+</div>
+</body>
+</html>

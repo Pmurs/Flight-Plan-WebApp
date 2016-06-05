@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type = "text/javascript" src = "plan.js"></script>
+</head>
+<body>
+    <form id = "myForm" action = "" method = "POST">
+        <div><label for="type">1. TYPE</label>
+        <input type = "radio" name = "type" value = "vfr"> VFR
+        <input type = "radio" name = "type" value = "ivr"> IVR
+        <input type = "radio" name = "type" value = "dvfr"> DVFR</div>
+        <div><label for="ident">2. AIRCRAFT IDENTIFICATION</label>
+        <input type = "text" name = "ident"></div>
+        <div><label for="special_equip">3. AIRCRAFT TYPE / SPECIAL EQUIPMENT</label>
+        <input type = "text" name = "special_equip"></div>
+        <div><label for="true_airspeed">4. TRUE AIRSPEED</label>
+        <input type = "number" name = "true_airspeed"> KTS</div>
+        <div><label for="departure">5. DEPARTURE POINT</label>
+        <input type = "text" name = "departure"></div>
+        <div><label for="dept_time">6. DEPARTURE TIME</label>
+        <div><label for="dept_time_proposed">PROPOSED (Z)</label>
+        <input type = "time" name = "dept_time_proposed">
+        <div><label for="dept_time_actual">ACTUAL (Z)</label>
+        <input type = "time" name = "dept_time_actual"></div></div></div>
+        <div><label for="cruise_alt">7. CRUISING ALTITUDE</label>
+        <input type = "text" name = "cruise_alt"></div>
+        <div><label for=route"">8. ROUTE OF FLIGHT</label>
+        <input type = "text" name = "route"></div>
+        <div><label for="dst">9. DESTINATION (Name of airport and city)</label>
+        <input type = "text" name = "dst"></div>
+        <div><label for="ete">10. EST. TIME ENROUTE</label>
+        <input type = "number" name = "ete"></div>
+        <div><label for="remarks">11. REMARKS</label>
+        <input type = "text" name = "remarks"></div>
+        <div><label for="fuel">12. FUEL ON BOARD</label>
+        <input type = "number" name = "fuel"></div>
+        <div><label for="alt_airports">13. ALTERNATE AIRPORTS(S)</label>
+        <input type = "text" name = "alt_airports"></div>
+        <div><label for="name">14. PILOT'S NAME, ADDRESS & TELEPHONE NUMBER & AIRCRAFT HOME BASE</label>
+        <input type = "text" name = "name"></div>
+        <div><label for="num_aboard">15. NUMBER ABOARD</label>
+        <input type = "number" name = "num_aboard"></div>
+        <div><label for="color">16. COLOR OF AIRCRAFT</label>
+        <input type = "text" name = "color"></div>
+        <div><label for="dst_contact">17. DESTINATION CONTACT/TELEPHONE (OPTIONAL)</label>
+        <input type = "text" name = "dst_contact"></div>
+        <div class = "button"><input type = "submit" id = "submitButton" value = "submit"></div>
+    </form>
+</body>
+</html>

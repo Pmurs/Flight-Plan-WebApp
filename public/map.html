@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+    <script type = "text/javascript" src = "map.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+</head>
+<body onload = setUpMap()>
+    <div id = "map"></div>
+    <div id = "notLoggedIn" class = "links">
+        <a href="login.html" class = 'fakeButton'>Log In</a>
+        <a href="signup.html" class = 'fakeButton'>Sign Up</a>
+    </div>
+    <div id = "loggedIn" class = "links">
+        <div><img src="http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" /></div>
+        <div><a href= "#" id = 'profile' class = 'fakeButton'>View Profile</a>
+        <a href="map.html" id = 'logOut' class = 'fakeButton' onclick = logOut()>Log Out</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+// Created by Paul on 10/21/2015.
+
+doctype html
+html(lang='en')
+   head
+      meta(charset='UTF-8')
+      title
+      link(rel='stylesheet', type='text/css', href='style.css')
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+      script(type='text.javascript', src='/auxilliary/md5.js')
+      script(type='text/javascript', src='profile.js')
+   body
+      .completedForm
+         div
+            label(for='username') Username:
+            span#username
+         div
+            label(for='first_name') First Name:
+            span#first_name
+         div
+            label(for='last_name') Last Name:
+            span#last_name
+         div
+            label(for='dob') Date of Birth:
+            span#dob
+         div
+            label(for='address_street') Street Address:
+            span#address_street
+         div
+            label(for='address_city') City:
+            span#address_city
+         div
+            label(for='address_state') State:
+            span#address_state
+         div
+            label(for='address_zip') ZIP Code:
+            span#address_zip
+         div
+            label(for='primary_phone') Primary Phone #:
+            span#primary_phone
+         div
+            label(for='primary_email') Primary Email:
+            span#primary_email
+         #notLoggedIn.links
+            a.fakeButton(href='login.html') Log In
+            a.fakeButton(href='signup.html') Sign Up
+            a.fakeButton(href='map.html') View Map
+         #loggedIn.links
+            div
+               img#gravitar(src='#')
+            div
+               a#edit.fakeButton(href='editProfile.html') Edit Profile
+               a.fakeButton(href='plan.html') Create Plan
+               a.fakeButton(href='map.html') View Map
+               a#logOut.fakeButton(href='#', onclick='logOut()') Log Out
+               a#deactivate.fakeButton(href='#', onclick='deactivate()') Deactivate Account
